@@ -2,5 +2,4 @@ logging
 time
 pyrogram
 pymongo
-sqlite3 
-mongo
+sqlite3
