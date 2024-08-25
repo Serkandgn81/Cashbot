@@ -1,10 +1,12 @@
-FROM python:3.9.10
+FROM nikolaik/python-nodejs:python3.10-nodejs19
 
-WORKDIR /app
-COPY . /app
- 
-RUN pip3 install -U pip
-COPY requirements.txt .
-RUN pip3 install -U -r requirements.txt
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends ffmpeg \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY . /app/
+WORKDIR /app/
+RUN pip3 install --no-cache-dir -U -r requirements.txt
 
 CMD ["python3", "-m", "main.py"]
