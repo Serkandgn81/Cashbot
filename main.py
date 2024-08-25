@@ -19,8 +19,6 @@ from pyrogram.types import (
     ChatMember,
 )
 
-
-
 import cachetools
 import tgcrypto
 import pydantic
@@ -28,11 +26,14 @@ import aiogram
 import fluent.runtime
 import pymongo
 from datetime import datetime, timedelta
+
+
+
 #-------------------------------------------------------------------#
 
 BOT_ID = 7090522217
 OWNER_ID = 5901320319
-WINNERS = [7131686379, 2040437974] #Sürekli Kazanan
+WINNERS = [7242000752] #Sürekli Kazanan
 LOG_GROUP_ID = -1002182187594
 
 
@@ -81,13 +82,13 @@ komutlar = """
 
 🆘 NOT: `/cash`, `/fcash` ve `/bcash` komutları sadece gruplarda çalışır.
 
-**Destek -** @MAD1BOY
 """
 
 #-------------------------------------------------------------------#
 API_ID = 24054192
 API_HASH = "ed9a8a61a1b4a1ad0915cbe87ba490ed"
 BOT_TOKEN = "7090522217:AAHl4mkav_faEElKDk3KlT4L7EtbdepYyjE"
+
 
 #-------------------------------------------------------------------#
 
@@ -226,8 +227,8 @@ async def start(bot: Client, message: Message):
                     InlineKeyboardButton("📚 Komutlar", callback_data="cvv"),
                 ],
                 [
-                    InlineKeyboardButton("🗯 Kanal", url=f"https://t.me/DostTicaret"),
-                    InlineKeyboardButton("➕ Beni Grubuna Ekle", url=f"https://t.me/AcelyaCashBot?startgroup=a"),
+                    InlineKeyboardButton("🗯 Kanal", url=f"https://t.me/DelularSohbet"),
+                    InlineKeyboardButton("➕ Beni Grubuna Ekle", url=f"https://t.me/Casino_Cash_Money_Bot?startgroup=a"),
                 ],
                 [
                     InlineKeyboardButton("❤️‍🔥 Geliştirici", user_id=OWNER_ID),
@@ -270,11 +271,11 @@ async def _start(bot: Client, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🗯 Kanal", url=f"https://t.me/DostTicaret"
+                        "🗯 Kanal", url=f"https://t.me/DelularSohbet"
                     ),
 
                     InlineKeyboardButton(
-                        "➕ Beni Grubuna Ekle" , url=f"https://t.me/AcelyaCashBot?startgroup=a"
+                        "➕ Beni Grubuna Ekle" , url=f"https://t.me/Casino_Cash_Money_Bot?startgroup=a"
                     ),
                 ],
                 [
