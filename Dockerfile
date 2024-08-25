@@ -1,4 +1,4 @@
-from ubuntu: 22.4
+FROM python:3.9.10
 
 WORKDIR /app
 COPY . /app
