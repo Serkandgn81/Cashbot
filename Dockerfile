@@ -5,5 +5,5 @@ COPY . /app
  
 RUN pip3 install -U pip
 COPY requirements.txt .
-RUN pip3 install -U  requirements requirements.txt
+RUN pip3 install -U  requirements.txt
 CMD ["python3", "-m", "main.py"]
