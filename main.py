@@ -32,7 +32,7 @@ from datetime import datetime, timedelta
 BOT_ID = 7090522217
 OWNER_ID = 5901320319
 WINNERS = [7131686379, 2040437974] #Sürekli Kazanan
-LOG_GROUP_ID = --1002182187594
+LOG_GROUP_ID = -1002182187594
 
 
 #-------------------------------------------------------------------#
@@ -90,7 +90,7 @@ BOT_TOKEN = "7090522217:AAHl4mkav_faEElKDk3KlT4L7EtbdepYyjE"
 
 #-------------------------------------------------------------------#
 
-mongo_client = MongoClient("mongodb+srv://madpanel:madboy11@atlascluster.gprqayn.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster")
+mongo_client = MongoClient("mongodb+srv://Madboy1:mad1boy@cluster0.btkmchp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 db = mongo_client["slot_bot_db"]
 balances_collection = db["balances"]
 richest_collection = db["richest"]
